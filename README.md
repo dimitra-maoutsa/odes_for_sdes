@@ -1,7 +1,9 @@
 # Deterministic particle dynamics for simulating Fokker-Planck probability flows 
 
 
-Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/README.md) the properly rendered readme file for now
+Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/README.md) the properly rendered readme file for now...
+
+
 (under construction -  for more detailed info please read the [relevant article](https://www.mdpi.com/1099-4300/22/8/802/htm))
 
 
