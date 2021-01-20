@@ -12,10 +12,10 @@ Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/READM
 ## C. **Smooth transient solutions of Fokker-Planck equations**
 
 
-<img src="images/OU2Dc.png"  width="20%" height="20%">
+<img src="OU2Dc.png"  width="20%" height="20%">
 
 
-<img src="images/Linear_Ham.png"  width="30%" height="30%">
+<img src="Linear_Ham.png"  width="30%" height="30%">
 
 
 **Citations:**
