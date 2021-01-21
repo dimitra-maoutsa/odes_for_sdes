@@ -11,13 +11,14 @@ Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/READM
 ## A. **From SDEs to ODEs**
   - ### Systems with additive noise
      Consider a stochastic system described by the SDE 
-
+      <p align="center">
      <img src="https://latex.codecogs.com/png.latex?%5Clarge%20dX_t%3D%20f%28X_t%29%20dt%20&plus;%20%5Csigma%20dW_t.">
-     
+     </p>
       The temporal evolution of the probability density of the system state is captured by the Fokker-Planck equation (FPE)
 
-
-      <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20p_t%28x%29%7D%7B%5Cpartial%20t%7D%20%3D%20-%5Cnabla%5Ccdot%20%5Cleft%5Bf%28x%29%20p_t%28x%29%20-%20%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%20%5Cnabla%20p_t%28x%29%5Cright%5D.">
+      <p align="center">
+      <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20p_t%28x%29%7D%7B%5Cpartial%20t%7D%20%3D%20-%5Cnabla%5Ccdot%20%5Cleft%5Bf%28x%29%20p_t%28x%29%20-%20%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%20%5Cnabla%20p_t%28x%29%5Cright%5D."> 
+      </p>
       
       The FPE may be re-written in the form of a **_Liouville equation_**  
       ```diff
