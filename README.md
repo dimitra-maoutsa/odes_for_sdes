@@ -1,3 +1,4 @@
+
 # Deterministic particle dynamics for simulating Fokker-Planck probability flows 
 
 
@@ -8,6 +9,43 @@ Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/READM
 
 
 ## A. **From SDEs to ODEs**
+  - ### Systems with additive noise
+     Consider a stochastic system described by the SDE 
+
+     <img src="https://latex.codecogs.com/png.latex?%5Clarge%20dX_t%3D%20f%28X_t%29%20dt%20&plus;%20%5Csigma%20dW_t.">
+     
+      The temporal evolution of the probability density of the system state is captured by the Fokker-Planck equation (FPE)
+
+
+      <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20p_t%28x%29%7D%7B%5Cpartial%20t%7D%20%3D%20-%5Cnabla%5Ccdot%20%5Cleft%5Bf%28x%29%20p_t%28x%29%20-%20%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%20%5Cnabla%20p_t%28x%29%5Cright%5D.">
+      
+      The FPE may be re-written in the form of a **_Liouville equation_**  
+      ```diff
+      ! [Eq.(3-5) in the main text]
+      ```
+
+      <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20p_t%28x%29%7D%7B%5Cpartial%20t%7D%20%3D%20-%5Cnabla%5Ccdot%20%5Cleft%5B%7B%5Cleft%28f%28x%29%20-%20%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%20%5Cnabla%20%5Cln%20p_t%28x%29%5Cright%29%7D%5C%3B%20p_t%28x%29%20%5Cright%5D%2C">
+
+      which in turn may be viewed as an evolution equation of the probability distribution of a statistical ensemble of **N** **_deterministic_** dynamical systems of the form _[Eq.(4-5) in the main text]_ 
+    `
+
+      <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7BdX_t%5E%7B%28i%29%7D%7D%7Bdt%7D%20%3D%20%7Bf%28X_t%5E%7B%28i%29%7D%29%29%20-%20%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%20%5Cnabla%20%5Cln%20p_t%28X_t%5E%7B%28i%29%7D%29%7D%2C%20%5Cquad%20%5Cquad%20%5Cquad%20%281%29">
+      
+      with i=1,...,N.
+
+  ### Systems with multiplicative noise
+    
+   In a similar vain, for **_state dependent_** diffusion 
+
+
+   <img src="https://latex.codecogs.com/png.latex?%5Clarge%20dX_t%3D%20f%28X_t%29%20dt%20&plus;%20%5Csigma%28X_t%29%20dW_t%2C">
+
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7BdX_t%5E%7B%28i%29%7D%7D%7Bdt%7D%20%3D%20%7Bf%28X_t%5E%7B%28i%29%7D%29%20-%20%5Cfrac%7B%5Csigma%28X_t%5E%7B%28i%29%7D%29%5Csigma%28X_t%5E%7B%28i%29%7D%29%5E%7B%5Cintercal%7D%7D%7B2%7D%20%5Cnabla%20%5Cln%20p_t%28X_t%5E%7B%28i%29%7D%29%20-%20%5Cfrac%7B1%7D%7B2%7D%20%5Cnabla%20%5Ccdot%20%5Csigma%28X_t%5E%7B%28i%29%7D%29%5Csigma%28X_t%5E%7B%28i%29%7D%29%5E%7B%5Cintercal%7D%20%7D%2C">
+
+<img src="https://latex.codecogs.com/png.latex?%5Cinline%20%5Clarge%20D%28x%29%20%3D%20%5Csigma%28x%29%20%5Csigma%28x%29%5E%7B%5Cintercal%7D%2C">
+
+<img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7BdX_t%5E%7B%28i%29%7D%7D%7Bdt%7D%20%3D%20%7Bf%28X_t%5E%7B%28i%29%7D%29%20-%20%5Cfrac%7BD%28X_t%5E%7B%28i%29%7D%29%7D%7B2%7D%20%5Cnabla%20%5Cln%20p_t%28X_t%5E%7B%28i%29%7D%29%20-%20%5Cfrac%7B1%7D%7B2%7D%20%5Cnabla%20%5Ccdot%20D%28X_t%5E%7B%28i%29%7D%29%20%7D.%20%5Cquad%20%5Cquad%20%5Cquad%20%282%29">
+
 
 ## B. **Gradient-log-density (score function) estimator**
 
