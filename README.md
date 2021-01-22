@@ -8,6 +8,12 @@ Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/READM
 (under construction -  for more detailed info please read the [relevant article](https://www.mdpi.com/1099-4300/22/8/802/htm))
 
 
+**Particle-based** framework for simulating **solutions of Fokker–Planck equations** that
+- is **effortless** to set up
+- provides **smooth transient solutions**
+- is **computationally efficient**.
+
+
 ## A. **From SDEs to ODEs**
   - ### Systems with additive noise
      Consider a stochastic system described by the SDE 
