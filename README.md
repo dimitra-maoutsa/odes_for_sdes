@@ -72,6 +72,8 @@ Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/READM
 
 ## C. **Smooth transient solutions of Fokker-Planck equations**
 
+<img src="high_speed.gif"  width="100%" height="100%">
+
 
 <img src="OU2Dc.png"  width="20%" height="20%">
 
