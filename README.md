@@ -62,9 +62,9 @@ Read [here](https://gitlab.com/dimitra-maoutsa/odes_for_sdes/-/blob/master/READM
       <p align="center">
       <img src="https://latex.codecogs.com/png.latex?%5Clarge%20%5Cfrac%7BdX_t%5E%7B%28i%29%7D%7D%7Bdt%7D%20%3D%20%7Bf%28X_t%5E%7B%28i%29%7D%29%20-%20%5Cfrac%7BD%28X_t%5E%7B%28i%29%7D%29%7D%7B2%7D%20%5Cnabla%20%5Cln%20p_t%28X_t%5E%7B%28i%29%7D%29%20-%20%5Cfrac%7B1%7D%7B2%7D%20%5Cnabla%20%5Ccdot%20D%28X_t%5E%7B%28i%29%7D%29%20%7D.%20%5Cquad%20%5Cquad%20%5Cquad%20%282%29">
 
-  Eq.(1) and Eq.(2) imply that we may obtain transient solutions of the associated FPEs by simulating ensembles of **deterministic** trajectories/particles with initial conditions drawn from the starting distribution $`p_0(x)`$. 
+  Eq.(1) and Eq.(2) imply that we may obtain transient solutions of the associated FPEs by simulating ensembles of **deterministic** trajectories/particles with initial conditions drawn from the starting distribution $p_0(x)$. 
 
-  **However, the deterministic particle dynamics in Eq.(1) and Eq.(2) require the knowledge of $`\nabla_x \ln p_t(x),`$ i.e. the gradient of the logarithm of the quantity of interest. 
+  **However, the deterministic particle dynamics in Eq.(1) and Eq.(2) require the knowledge of $\nabla_x \ln p_t(x)$, i.e. the gradient of the logarithm of the quantity of interest. 
   Enter the gradient-log density estimator (score function estimator)!**
 
 
