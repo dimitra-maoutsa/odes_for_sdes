@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar  7 08:25:47 2023
-
-@author: maout
-"""
 
 
 #!/usr/bin/env python3
